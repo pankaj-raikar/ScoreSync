@@ -13,7 +13,7 @@ export const matches = pgTable('matches',{
     homeScore:integer('home_score').notNull().default(0),
     awayScore:integer('away_score').notNull().default(0),
     createdAt:timestamp("created_at").notNull().defaultNow(),
-})
+});
 
 export const commentary=pgTable('commentary',{
     id:serial('id').primaryKey(),
@@ -28,4 +28,4 @@ export const commentary=pgTable('commentary',{
     tags:text("tags").array(),
     createdAt:timestamp("created_at").notNull().defaultNow()
 
-})
+});
